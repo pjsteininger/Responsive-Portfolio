@@ -40,11 +40,12 @@
     padding: 0 10px 0 10px;
 }
 .fullScreenLine {
-    height: 2px;
+    height: 3px;
     background-color: #777;
     width: 100%;
     display: inline-block;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
+    margin-top: -1px;
 }
 .contentElements {
     width: 960px;
@@ -166,25 +167,48 @@ p {
 }
 
 @media screen and (max-width: 980px) {
-    /* The body's bg color will be #333 */
-    .headerElements {
-        width: 100vw;
-    }
-    .contentElements {
-        width: 90vw;
+    .headerElements, .contentElements {
+        width: 700px;
     }
     .nameHeader {
         width: 240px;
         font-size: 27px;
         padding: 34.5px;
     }
+    .portfolioImageLink {
+        left: 15.5%;
+    }
 }
 @media screen and (max-width: 768px) {
+    /* The body's bg color will be #333 */
+    .headerElements, .contentElements {
+        width: 600px;
+    }
+    .nameHeader {
+        width: 200px;
+        font-size: 21px;
+        padding: 40px 10px 40px 10px;
+    }
+    .imageLinkDiv {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        width: 49.5%;
+    }
+    .portfolioImage {
+        width: 150px;
+    }
+    .portfolioImageLink {
+        left: 18.1%;
+        width: 190px;
+    }
+}
+@media screen and (max-width: 640px) {
     .headerElements {
         width: 100vw;
     }
     .contentElements {
-        width: 90vw;
+        width: 300px;
     }
     .pageHeader {
         text-align: center;
@@ -200,7 +224,6 @@ p {
         float: none;
     }
     .navBar, .nameHeader {
-        float: none;
         padding: auto;
         text-align: center;
         display: block;
@@ -215,4 +238,16 @@ p {
         font-size: 27px;
         padding: auto;
     }
+    .imageLinkDiv {
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .portfolioImageLink {
+        left: 18.2%;
+        width: 190px;
+    }
+
+
 }
